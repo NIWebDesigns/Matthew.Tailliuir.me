@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Executive Resume CV</title>
+  <meta name="description" content="Professional CV website with premium design and strong narrative flow." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#070a12;--bg2:#0a1020;--panel:rgba(255,255,255,.05);--panel2:rgba(255,255,255,.07);--text:#f7f9fc;--muted:#9aa8c2;--line:rgba(255,255,255,.09);--accent:#7c9cff;--accent2:#2fe0b1;--accent3:#ffd36a;--shadow:0 30px 80px rgba(0,0,0,.48);--radius:28px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--text);background:
+      radial-gradient(circle at 12% 12%, rgba(124,156,255,.18), transparent 22%),
+      radial-gradient(circle at 88% 8%, rgba(47,224,177,.14), transparent 20%),
+      radial-gradient(circle at 50% 100%, rgba(255,211,106,.08), transparent 26%),
+      linear-gradient(180deg,var(--bg2),var(--bg));}
+    a{color:inherit;text-decoration:none} .wrap{max-width:1240px;margin:0 auto;padding:24px}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:10px 0 18px;position:sticky;top:0;z-index:20;background:linear-gradient(to bottom,rgba(7,10,18,.9),rgba(7,10,18,.72),transparent);backdrop-filter:blur(16px)}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.03em}.orb{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 0 8px rgba(124,156,255,.08)}.navlinks{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem}.navlinks a:hover{color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;align-items:stretch;padding:10px 0 22px}
+    .card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+    .hero-left{padding:34px;position:relative;overflow:hidden}.hero-left:before{content:"";position:absolute;inset:-40px auto auto -60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(124,156,255,.18),transparent 72%)}.hero-left:after{content:"";position:absolute;right:-90px;bottom:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(47,224,177,.13),transparent 70%);pointer-events:none}
+    .kicker{display:inline-flex;align-items:center;gap:10px;padding:9px 14px;border-radius:999px;background:rgba(124,156,255,.12);border:1px solid rgba(124,156,255,.2);color:#d8e4ff;font-size:.82rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+    h1{font-size:clamp(2.7rem,6vw,5.6rem);line-height:.9;margin:0 0 14px;letter-spacing:-.07em;max-width:10ch}.lede{font-size:1.08rem;line-height:1.84;color:var(--muted);max-width:60ch;margin:0}
+    .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.rule{padding:16px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--line)}.rule strong{display:block;font-size:1rem;margin-bottom:5px}.rule span{color:var(--muted);font-size:.93rem;line-height:1.6}
+    .hero-right{padding:18px;display:grid;gap:12px}.portrait{min-height:272px;border-radius:24px;background:
+      linear-gradient(135deg, rgba(124,156,255,.24), rgba(47,224,177,.12)),
+      radial-gradient(circle at 25% 30%, rgba(255,255,255,.18), transparent 30%),
+      linear-gradient(180deg,#18243d,#0d1322);border:1px solid var(--line);position:relative;overflow:hidden}.portrait:before{content:"YOUR PHOTO";position:absolute;left:20px;bottom:18px;font-weight:900;letter-spacing:.18em;font-size:.78rem;color:rgba(255,255,255,.8)}.portrait:after{content:"";position:absolute;top:18px;right:18px;width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.12);box-shadow:0 0 0 16px rgba(255,255,255,.05)}
+    .contactgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.contact{padding:15px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04)}.contact small{display:block;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px;font-size:.74rem}.contact div{font-weight:600;line-height:1.45}
+    .sections{display:grid;grid-template-columns:repeat(12,1fr);gap:22px;padding:2px 0 44px}.section{padding:26px}.section h2{margin:0 0 16px;font-size:1.38rem;letter-spacing:-.03em}.section p{color:var(--muted);line-height:1.8}
+    .summary{grid-column:span 12}.story{grid-column:span 7}.proof{grid-column:span 5}.experience{grid-column:span 8}.skills{grid-column:span 4}.education{grid-column:span 6}.extras{grid-column:span 6}
+    .timeline{display:grid;gap:16px}.job{padding:16px 0;border-top:1px solid var(--line)}.job:first-child{border-top:0;padding-top:0}.jobtop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.role{font-weight:900;font-size:1.02rem}.org{color:var(--muted);font-size:.95rem}.chip{padding:8px 11px;border-radius:999px;background:rgba(47,224,177,.12);color:#a7f5e2;font-size:.78rem;font-weight:900;border:1px solid rgba(47,224,177,.16);white-space:nowrap}
+    .bullets{margin:10px 0 0;padding-left:18px;color:var(--muted)}.bullets li{margin:6px 0}
+    .tagwrap{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.04);border:1px solid var(--line);color:#e7eeff;font-size:.92rem}
+    .stack{display:grid;gap:12px}.tile{padding:18px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--line)}.tile strong{display:block;margin-bottom:6px}.tile span{color:var(--muted)}
+    .contactbar{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;padding:18px 20px;border-radius:22px;background:linear-gradient(135deg, rgba(124,156,255,.13), rgba(47,224,177,.08));border:1px solid rgba(255,255,255,.1)}.contactbar a{text-decoration:underline;text-underline-offset:4px}
+    .footer{padding:18px 0 10px;color:var(--muted);text-align:center;font-size:.92rem}
+    @media (max-width: 1020px){.hero,.story,.proof,.experience,.skills,.education,.extras{grid-column:span 12}.rules{grid-template-columns:1fr}.contactgrid{grid-template-columns:1fr 1fr}}
+    @media (max-width: 700px){.wrap{padding:16px}.nav{flex-direction:column;align-items:flex-start}.contactgrid{grid-template-columns:1fr}.hero-left{padding:24px}.section{padding:20px}}
+    @media print{body{background:#fff;color:#000}.nav,.footer{display:none}.card{box-shadow:none;background:#fff;border:1px solid #ccc;backdrop-filter:none}.hero-left,.section,.contactbar{break-inside:avoid}.wrap{max-width:none;padding:0}.hero,.sections{gap:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <div class="brand"><span class="orb"></span><span>Your Name · Security Operations</span></div>
+      <nav class="navlinks"><a href="#summary">Profile</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+    </header>
+
+    <section class="hero">
+      <div class="card hero-left">
+        <div class="kicker">Executive CV · Personal Brand</div>
+        <h1>Make them stop and read.</h1>
+        <p class="lede">This layout is built to create trust fast: a powerful identity, a clear narrative, visual hierarchy that feels premium, and space for the achievements that make you the obvious hire.</p>
+        <div class="rules">
+          <div class="rule"><strong>Hook</strong><span>Lead with a strong identity line, not generic text.</span></div>
+          <div class="rule"><strong>Proof</strong><span>Show real impact early, before the reader drifts.</span></div>
+          <div class="rule"><strong>Flow</strong><span>Guide the eye naturally from top to bottom.</span></div>
+        </div>
+      </div>
+      <aside class="card hero-right" id="contact">
+        <div class="portrait"></div>
+        <div class="contactgrid">
+          <div class="contact"><small>Email</small><div>your@email.com</div></div>
+          <div class="contact"><small>Phone</small><div>+44 0000 000000</div></div>
+          <div class="contact"><small>Location</small><div>Belfast, Northern Ireland</div></div>
+          <div class="contact"><small>LinkedIn</small><div>linkedin.com/in/yourname</div></div>
+        </div>
+      </aside>
+    </section>
+
+    <main class="sections">
+      <section class="card section summary" id="summary">
+        <h2>Professional Summary</h2>
+        <p>Replace this with a high-quality, specific summary that says who you are, what you do well, and what kind of role you are aiming for. This section should sound like a person with authority and direction.</p>
+      </section>
+
+      <section class="card section story">
+        <h2>Your Story</h2>
+        <p>Use this to show why your background matters. A great CV website doesn’t just list jobs — it explains the pattern of your work, your standards, and the level you operate at.</p>
+      </section>
+
+      <section class="card section proof">
+        <h2>Proof Points</h2>
+        <div class="stack">
+          <div class="tile"><strong>Achievement 1</strong><span>Add a measurable win or responsibility.</span></div>
+          <div class="tile"><strong>Achievement 2</strong><span>Add a leadership or reliability example.</span></div>
+          <div class="tile"><strong>Achievement 3</strong><span>Add something that makes you memorable.</span></div>
+        </div>
+      </section>
+
+      <section class="card section experience" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="job">
+            <div class="jobtop"><div><div class="role">Current Role</div><div class="org">Company · 2023–Present</div></div><span class="chip">Current</span></div>
+            <ul class="bullets"><li>Lead with the most important responsibility.</li><li>Show results, judgement, and professionalism.</li><li>Keep the language confident and concise.</li></ul>
+          </div>
+          <div class="job">
+            <div class="jobtop"><div><div class="role">Previous Role</div><div class="org">Company · 2020–2023</div></div><span class="chip">Past</span></div>
+            <ul class="bullets"><li>Show growth and progression.</li><li>Only include details that strengthen the application.</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section skills" id="skills">
+        <h2>Skills</h2>
+        <div class="tagwrap">
+          <span class="tag">Security Operations</span><span class="tag">Control Room</span><span class="tag">Leadership</span><span class="tag">Reporting</span><span class="tag">Communication</span><span class="tag">Risk Awareness</span><span class="tag">Decision Making</span><span class="tag">Reliability</span>
+        </div>
+      </section>
+
+      <section class="card section education" id="education">
+        <h2>Education</h2>
+        <p>Include qualifications, licences, and training that support your role.</p>
+        <div class="tile"><strong>Qualification</strong><span>Institution · Year</span></div>
+      </section>
+
+      <section class="card section extras">
+        <h2>More Details</h2>
+        <p>Use this area for certifications, awards, interests, or a short note that adds human character without cluttering the page.</p>
+      </section>
+
+      <section class="contactbar card" style="grid-column:span 12" id="contactbar">
+        <div><strong style="font-size:1.05rem">Ready to talk</strong><div style="color:var(--muted);margin-top:4px">Make it easy for employers to reach you instantly.</div></div>
+        <div><a href="mailto:your@email.com">your@email.com</a></div>
+      </section>
+    </main>
+
+    <footer class="footer">A premium resume website should feel focused, credible, and unmistakably yours.</footer>
+  </div>
+</body>
+</html>
